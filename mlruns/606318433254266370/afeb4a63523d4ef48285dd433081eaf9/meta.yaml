@@ -1,0 +1,15 @@
+artifact_uri: file:///home/devipriya/Ammu/Scaler_project/Donor_choose/mlruns/606318433254266370/afeb4a63523d4ef48285dd433081eaf9/artifacts
+end_time: 1744831584406
+entry_point_name: ''
+experiment_id: '606318433254266370'
+lifecycle_stage: active
+run_id: afeb4a63523d4ef48285dd433081eaf9
+run_name: LGBM
+run_uuid: afeb4a63523d4ef48285dd433081eaf9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744831539571
+status: 4
+tags: []
+user_id: devipriya
