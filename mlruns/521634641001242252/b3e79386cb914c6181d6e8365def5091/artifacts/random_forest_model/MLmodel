@@ -1,0 +1,463 @@
+artifact_path: random_forest_model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.0
+is_signature_from_type_hint: false
+mlflow_version: 2.21.0
+model_size_bytes: 22355868
+model_uuid: 2b78432f4f984909a7a9828bdac1e741
+prompts: null
+run_id: b3e79386cb914c6181d6e8365def5091
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "teacher_number_of_previously_posted_projects",
+    "required": true}, {"type": "double", "name": "len_project_essay3", "required":
+    true}, {"type": "double", "name": "len_project_essay4", "required": true}, {"type":
+    "double", "name": "year_of_submission", "required": true}, {"type": "double",
+    "name": "month_of_submission", "required": true}, {"type": "double", "name": "day_of_submission",
+    "required": true}, {"type": "double", "name": "day_of_week", "required": true},
+    {"type": "double", "name": "week_of_submission", "required": true}, {"type": "double",
+    "name": "hour_of_submission", "required": true}, {"type": "double", "name": "quarter_of_submission",
+    "required": true}, {"type": "double", "name": "total_cost", "required": true},
+    {"type": "double", "name": "items_count", "required": true}, {"type": "double",
+    "name": "Average_essay_length", "required": true}, {"type": "double", "name":
+    "len_project_essay1", "required": true}, {"type": "double", "name": "len_project_essay2",
+    "required": true}, {"type": "long", "name": "teacher_experience", "required":
+    true}, {"type": "double", "name": "100", "required": true}, {"type": "double",
+    "name": "21st", "required": true}, {"type": "double", "name": "21st century",
+    "required": true}, {"type": "double", "name": "5th", "required": true}, {"type":
+    "double", "name": "abilities", "required": true}, {"type": "double", "name": "ability",
+    "required": true}, {"type": "double", "name": "able", "required": true}, {"type":
+    "double", "name": "able use", "required": true}, {"type": "double", "name": "academic",
+    "required": true}, {"type": "double", "name": "access", "required": true}, {"type":
+    "double", "name": "achieve", "required": true}, {"type": "double", "name": "active",
+    "required": true}, {"type": "double", "name": "activities", "required": true},
+    {"type": "double", "name": "activity", "required": true}, {"type": "double", "name":
+    "add", "required": true}, {"type": "double", "name": "addition", "required": true},
+    {"type": "double", "name": "age", "required": true}, {"type": "double", "name":
+    "allow", "required": true}, {"type": "double", "name": "allow students", "required":
+    true}, {"type": "double", "name": "allows", "required": true}, {"type": "double",
+    "name": "amazing", "required": true}, {"type": "double", "name": "apps", "required":
+    true}, {"type": "double", "name": "area", "required": true}, {"type": "double",
+    "name": "areas", "required": true}, {"type": "double", "name": "art", "required":
+    true}, {"type": "double", "name": "arts", "required": true}, {"type": "double",
+    "name": "ask", "required": true}, {"type": "double", "name": "asking", "required":
+    true}, {"type": "double", "name": "attend", "required": true}, {"type": "double",
+    "name": "attention", "required": true}, {"type": "double", "name": "available",
+    "required": true}, {"type": "double", "name": "backgrounds", "required": true},
+    {"type": "double", "name": "balls", "required": true}, {"type": "double", "name":
+    "based", "required": true}, {"type": "double", "name": "basic", "required": true},
+    {"type": "double", "name": "basis", "required": true}, {"type": "double", "name":
+    "begin", "required": true}, {"type": "double", "name": "believe", "required":
+    true}, {"type": "double", "name": "benefit", "required": true}, {"type": "double",
+    "name": "best", "required": true}, {"type": "double", "name": "better", "required":
+    true}, {"type": "double", "name": "big", "required": true}, {"type": "double",
+    "name": "book", "required": true}, {"type": "double", "name": "books", "required":
+    true}, {"type": "double", "name": "breakfast", "required": true}, {"type": "double",
+    "name": "breakfast lunch", "required": true}, {"type": "double", "name": "bright",
+    "required": true}, {"type": "double", "name": "bring", "required": true}, {"type":
+    "double", "name": "build", "required": true}, {"type": "double", "name": "building",
+    "required": true}, {"type": "double", "name": "care", "required": true}, {"type":
+    "double", "name": "center", "required": true}, {"type": "double", "name": "centers",
+    "required": true}, {"type": "double", "name": "century", "required": true}, {"type":
+    "double", "name": "chair", "required": true}, {"type": "double", "name": "chairs",
+    "required": true}, {"type": "double", "name": "challenge", "required": true},
+    {"type": "double", "name": "challenges", "required": true}, {"type": "double",
+    "name": "challenging", "required": true}, {"type": "double", "name": "chance",
+    "required": true}, {"type": "double", "name": "change", "required": true}, {"type":
+    "double", "name": "child", "required": true}, {"type": "double", "name": "children",
+    "required": true}, {"type": "double", "name": "choice", "required": true}, {"type":
+    "double", "name": "choices", "required": true}, {"type": "double", "name": "choose",
+    "required": true}, {"type": "double", "name": "chromebooks", "required": true},
+    {"type": "double", "name": "city", "required": true}, {"type": "double", "name":
+    "class", "required": true}, {"type": "double", "name": "classes", "required":
+    true}, {"type": "double", "name": "classroom", "required": true}, {"type": "double",
+    "name": "classroom students", "required": true}, {"type": "double", "name": "classrooms",
+    "required": true}, {"type": "double", "name": "college", "required": true}, {"type":
+    "double", "name": "come", "required": true}, {"type": "double", "name": "come
+    low", "required": true}, {"type": "double", "name": "come school", "required":
+    true}, {"type": "double", "name": "comes", "required": true}, {"type": "double",
+    "name": "comfortable", "required": true}, {"type": "double", "name": "coming",
+    "required": true}, {"type": "double", "name": "common", "required": true}, {"type":
+    "double", "name": "community", "required": true}, {"type": "double", "name": "complete",
+    "required": true}, {"type": "double", "name": "comprehension", "required": true},
+    {"type": "double", "name": "computer", "required": true}, {"type": "double", "name":
+    "computers", "required": true}, {"type": "double", "name": "concepts", "required":
+    true}, {"type": "double", "name": "confidence", "required": true}, {"type": "double",
+    "name": "constantly", "required": true}, {"type": "double", "name": "content",
+    "required": true}, {"type": "double", "name": "continue", "required": true}, {"type":
+    "double", "name": "core", "required": true}, {"type": "double", "name": "create",
+    "required": true}, {"type": "double", "name": "creating", "required": true}, {"type":
+    "double", "name": "creative", "required": true}, {"type": "double", "name": "creativity",
+    "required": true}, {"type": "double", "name": "critical", "required": true}, {"type":
+    "double", "name": "curious", "required": true}, {"type": "double", "name": "current",
+    "required": true}, {"type": "double", "name": "currently", "required": true},
+    {"type": "double", "name": "curriculum", "required": true}, {"type": "double",
+    "name": "daily", "required": true}, {"type": "double", "name": "daily basis",
+    "required": true}, {"type": "double", "name": "day", "required": true}, {"type":
+    "double", "name": "day students", "required": true}, {"type": "double", "name":
+    "deserve", "required": true}, {"type": "double", "name": "design", "required":
+    true}, {"type": "double", "name": "desire", "required": true}, {"type": "double",
+    "name": "desk", "required": true}, {"type": "double", "name": "desks", "required":
+    true}, {"type": "double", "name": "despite", "required": true}, {"type": "double",
+    "name": "develop", "required": true}, {"type": "double", "name": "difference",
+    "required": true}, {"type": "double", "name": "different", "required": true},
+    {"type": "double", "name": "difficult", "required": true}, {"type": "double",
+    "name": "digital", "required": true}, {"type": "double", "name": "disabilities",
+    "required": true}, {"type": "double", "name": "district", "required": true}, {"type":
+    "double", "name": "diverse", "required": true}, {"type": "double", "name": "does",
+    "required": true}, {"type": "double", "name": "doing", "required": true}, {"type":
+    "double", "name": "don", "required": true}, {"type": "double", "name": "donation",
+    "required": true}, {"type": "double", "name": "eager", "required": true}, {"type":
+    "double", "name": "eager learn", "required": true}, {"type": "double", "name":
+    "early", "required": true}, {"type": "double", "name": "economic", "required":
+    true}, {"type": "double", "name": "education", "required": true}, {"type": "double",
+    "name": "educational", "required": true}, {"type": "double", "name": "elementary",
+    "required": true}, {"type": "double", "name": "elementary school", "required":
+    true}, {"type": "double", "name": "encourage", "required": true}, {"type": "double",
+    "name": "end", "required": true}, {"type": "double", "name": "energetic", "required":
+    true}, {"type": "double", "name": "energy", "required": true}, {"type": "double",
+    "name": "engage", "required": true}, {"type": "double", "name": "engaged", "required":
+    true}, {"type": "double", "name": "engaging", "required": true}, {"type": "double",
+    "name": "engineering", "required": true}, {"type": "double", "name": "english",
+    "required": true}, {"type": "double", "name": "english language", "required":
+    true}, {"type": "double", "name": "enhance", "required": true}, {"type": "double",
+    "name": "enjoy", "required": true}, {"type": "double", "name": "ensure", "required":
+    true}, {"type": "double", "name": "environment", "required": true}, {"type": "double",
+    "name": "equipment", "required": true}, {"type": "double", "name": "especially",
+    "required": true}, {"type": "double", "name": "essential", "required": true},
+    {"type": "double", "name": "everyday", "required": true}, {"type": "double", "name":
+    "excited", "required": true}, {"type": "double", "name": "excitement", "required":
+    true}, {"type": "double", "name": "exciting", "required": true}, {"type": "double",
+    "name": "experience", "required": true}, {"type": "double", "name": "experiences",
+    "required": true}, {"type": "double", "name": "explore", "required": true}, {"type":
+    "double", "name": "extra", "required": true}, {"type": "double", "name": "extremely",
+    "required": true}, {"type": "double", "name": "face", "required": true}, {"type":
+    "double", "name": "families", "required": true}, {"type": "double", "name": "family",
+    "required": true}, {"type": "double", "name": "feel", "required": true}, {"type":
+    "double", "name": "flexible", "required": true}, {"type": "double", "name": "flexible
+    seating", "required": true}, {"type": "double", "name": "focus", "required": true},
+    {"type": "double", "name": "focused", "required": true}, {"type": "double", "name":
+    "food", "required": true}, {"type": "double", "name": "forward", "required": true},
+    {"type": "double", "name": "free", "required": true}, {"type": "double", "name":
+    "free breakfast", "required": true}, {"type": "double", "name": "free lunch",
+    "required": true}, {"type": "double", "name": "free reduced", "required": true},
+    {"type": "double", "name": "fun", "required": true}, {"type": "double", "name":
+    "funding", "required": true}, {"type": "double", "name": "future", "required":
+    true}, {"type": "double", "name": "games", "required": true}, {"type": "double",
+    "name": "getting", "required": true}, {"type": "double", "name": "given", "required":
+    true}, {"type": "double", "name": "giving", "required": true}, {"type": "double",
+    "name": "goal", "required": true}, {"type": "double", "name": "goals", "required":
+    true}, {"type": "double", "name": "going", "required": true}, {"type": "double",
+    "name": "good", "required": true}, {"type": "double", "name": "grade", "required":
+    true}, {"type": "double", "name": "grade level", "required": true}, {"type": "double",
+    "name": "grade students", "required": true}, {"type": "double", "name": "graders",
+    "required": true}, {"type": "double", "name": "grades", "required": true}, {"type":
+    "double", "name": "great", "required": true}, {"type": "double", "name": "greatly",
+    "required": true}, {"type": "double", "name": "group", "required": true}, {"type":
+    "double", "name": "groups", "required": true}, {"type": "double", "name": "grow",
+    "required": true}, {"type": "double", "name": "growing", "required": true}, {"type":
+    "double", "name": "growth", "required": true}, {"type": "double", "name": "hand",
+    "required": true}, {"type": "double", "name": "hands", "required": true}, {"type":
+    "double", "name": "hard", "required": true}, {"type": "double", "name": "having",
+    "required": true}, {"type": "double", "name": "headphones", "required": true},
+    {"type": "double", "name": "healthy", "required": true}, {"type": "double", "name":
+    "help", "required": true}, {"type": "double", "name": "help students", "required":
+    true}, {"type": "double", "name": "helping", "required": true}, {"type": "double",
+    "name": "helps", "required": true}, {"type": "double", "name": "high", "required":
+    true}, {"type": "double", "name": "high poverty", "required": true}, {"type":
+    "double", "name": "high school", "required": true}, {"type": "double", "name":
+    "home", "required": true}, {"type": "double", "name": "homes", "required": true},
+    {"type": "double", "name": "hope", "required": true}, {"type": "double", "name":
+    "ideas", "required": true}, {"type": "double", "name": "important", "required":
+    true}, {"type": "double", "name": "improve", "required": true}, {"type": "double",
+    "name": "including", "required": true}, {"type": "double", "name": "income", "required":
+    true}, {"type": "double", "name": "increase", "required": true}, {"type": "double",
+    "name": "independent", "required": true}, {"type": "double", "name": "individual",
+    "required": true}, {"type": "double", "name": "information", "required": true},
+    {"type": "double", "name": "inspire", "required": true}, {"type": "double", "name":
+    "instruction", "required": true}, {"type": "double", "name": "interactive", "required":
+    true}, {"type": "double", "name": "ipad", "required": true}, {"type": "double",
+    "name": "ipads", "required": true}, {"type": "double", "name": "items", "required":
+    true}, {"type": "double", "name": "job", "required": true}, {"type": "double",
+    "name": "just", "required": true}, {"type": "double", "name": "kids", "required":
+    true}, {"type": "double", "name": "kindergarten", "required": true}, {"type":
+    "double", "name": "know", "required": true}, {"type": "double", "name": "knowledge",
+    "required": true}, {"type": "double", "name": "lack", "required": true}, {"type":
+    "double", "name": "language", "required": true}, {"type": "double", "name": "language
+    learners", "required": true}, {"type": "double", "name": "large", "required":
+    true}, {"type": "double", "name": "learn", "required": true}, {"type": "double",
+    "name": "learned", "required": true}, {"type": "double", "name": "learners", "required":
+    true}, {"type": "double", "name": "learning", "required": true}, {"type": "double",
+    "name": "learning environment", "required": true}, {"type": "double", "name":
+    "learning students", "required": true}, {"type": "double", "name": "lesson", "required":
+    true}, {"type": "double", "name": "lessons", "required": true}, {"type": "double",
+    "name": "let", "required": true}, {"type": "double", "name": "level", "required":
+    true}, {"type": "double", "name": "levels", "required": true}, {"type": "double",
+    "name": "library", "required": true}, {"type": "double", "name": "life", "required":
+    true}, {"type": "double", "name": "like", "required": true}, {"type": "double",
+    "name": "limited", "required": true}, {"type": "double", "name": "listen", "required":
+    true}, {"type": "double", "name": "listening", "required": true}, {"type": "double",
+    "name": "literacy", "required": true}, {"type": "double", "name": "literature",
+    "required": true}, {"type": "double", "name": "little", "required": true}, {"type":
+    "double", "name": "live", "required": true}, {"type": "double", "name": "lives",
+    "required": true}, {"type": "double", "name": "living", "required": true}, {"type":
+    "double", "name": "located", "required": true}, {"type": "double", "name": "long",
+    "required": true}, {"type": "double", "name": "look", "required": true}, {"type":
+    "double", "name": "looking", "required": true}, {"type": "double", "name": "lot",
+    "required": true}, {"type": "double", "name": "love", "required": true}, {"type":
+    "double", "name": "love learning", "required": true}, {"type": "double", "name":
+    "love reading", "required": true}, {"type": "double", "name": "low", "required":
+    true}, {"type": "double", "name": "low income", "required": true}, {"type": "double",
+    "name": "lunch", "required": true}, {"type": "double", "name": "majority", "required":
+    true}, {"type": "double", "name": "majority students", "required": true}, {"type":
+    "double", "name": "make", "required": true}, {"type": "double", "name": "makes",
+    "required": true}, {"type": "double", "name": "making", "required": true}, {"type":
+    "double", "name": "materials", "required": true}, {"type": "double", "name": "math",
+    "required": true}, {"type": "double", "name": "meaningful", "required": true},
+    {"type": "double", "name": "means", "required": true}, {"type": "double", "name":
+    "meet", "required": true}, {"type": "double", "name": "middle", "required": true},
+    {"type": "double", "name": "middle school", "required": true}, {"type": "double",
+    "name": "minds", "required": true}, {"type": "double", "name": "money", "required":
+    true}, {"type": "double", "name": "morning", "required": true}, {"type": "double",
+    "name": "motivated", "required": true}, {"type": "double", "name": "movement",
+    "required": true}, {"type": "double", "name": "moving", "required": true}, {"type":
+    "double", "name": "multiple", "required": true}, {"type": "double", "name": "music",
+    "required": true}, {"type": "double", "name": "necessary", "required": true},
+    {"type": "double", "name": "need", "required": true}, {"type": "double", "name":
+    "needed", "required": true}, {"type": "double", "name": "needs", "required": true},
+    {"type": "double", "name": "needs students", "required": true}, {"type": "double",
+    "name": "neighborhood", "required": true}, {"type": "double", "name": "new", "required":
+    true}, {"type": "double", "name": "ni", "required": true}, {"type": "double",
+    "name": "nmy", "required": true}, {"type": "double", "name": "nmy students", "required":
+    true}, {"type": "double", "name": "nour", "required": true}, {"type": "double",
+    "name": "nstudents", "required": true}, {"type": "double", "name": "nthe", "required":
+    true}, {"type": "double", "name": "nthese", "required": true}, {"type": "double",
+    "name": "nthey", "required": true}, {"type": "double", "name": "nthis", "required":
+    true}, {"type": "double", "name": "number", "required": true}, {"type": "double",
+    "name": "nwe", "required": true}, {"type": "double", "name": "offer", "required":
+    true}, {"type": "double", "name": "old", "required": true}, {"type": "double",
+    "name": "online", "required": true}, {"type": "double", "name": "open", "required":
+    true}, {"type": "double", "name": "opportunities", "required": true}, {"type":
+    "double", "name": "opportunity", "required": true}, {"type": "double", "name":
+    "options", "required": true}, {"type": "double", "name": "order", "required":
+    true}, {"type": "double", "name": "outside", "required": true}, {"type": "double",
+    "name": "paper", "required": true}, {"type": "double", "name": "parent", "required":
+    true}, {"type": "double", "name": "parents", "required": true}, {"type": "double",
+    "name": "participate", "required": true}, {"type": "double", "name": "peers",
+    "required": true}, {"type": "double", "name": "people", "required": true}, {"type":
+    "double", "name": "personal", "required": true}, {"type": "double", "name": "physical",
+    "required": true}, {"type": "double", "name": "place", "required": true}, {"type":
+    "double", "name": "play", "required": true}, {"type": "double", "name": "playing",
+    "required": true}, {"type": "double", "name": "population", "required": true},
+    {"type": "double", "name": "positive", "required": true}, {"type": "double", "name":
+    "possible", "required": true}, {"type": "double", "name": "potential", "required":
+    true}, {"type": "double", "name": "poverty", "required": true}, {"type": "double",
+    "name": "practice", "required": true}, {"type": "double", "name": "prepare", "required":
+    true}, {"type": "double", "name": "problem", "required": true}, {"type": "double",
+    "name": "problems", "required": true}, {"type": "double", "name": "process", "required":
+    true}, {"type": "double", "name": "program", "required": true}, {"type": "double",
+    "name": "programs", "required": true}, {"type": "double", "name": "project", "required":
+    true}, {"type": "double", "name": "projects", "required": true}, {"type": "double",
+    "name": "provide", "required": true}, {"type": "double", "name": "provide students",
+    "required": true}, {"type": "double", "name": "provides", "required": true}, {"type":
+    "double", "name": "providing", "required": true}, {"type": "double", "name": "public",
+    "required": true}, {"type": "double", "name": "quality", "required": true}, {"type":
+    "double", "name": "questions", "required": true}, {"type": "double", "name": "range",
+    "required": true}, {"type": "double", "name": "reach", "required": true}, {"type":
+    "double", "name": "read", "required": true}, {"type": "double", "name": "readers",
+    "required": true}, {"type": "double", "name": "reading", "required": true}, {"type":
+    "double", "name": "reading writing", "required": true}, {"type": "double", "name":
+    "ready", "required": true}, {"type": "double", "name": "ready learn", "required":
+    true}, {"type": "double", "name": "real", "required": true}, {"type": "double",
+    "name": "really", "required": true}, {"type": "double", "name": "receive", "required":
+    true}, {"type": "double", "name": "receive free", "required": true}, {"type":
+    "double", "name": "reduced", "required": true}, {"type": "double", "name": "reduced
+    lunch", "required": true}, {"type": "double", "name": "requested", "required":
+    true}, {"type": "double", "name": "requesting", "required": true}, {"type": "double",
+    "name": "research", "required": true}, {"type": "double", "name": "resources",
+    "required": true}, {"type": "double", "name": "right", "required": true}, {"type":
+    "double", "name": "room", "required": true}, {"type": "double", "name": "rural",
+    "required": true}, {"type": "double", "name": "safe", "required": true}, {"type":
+    "double", "name": "scholars", "required": true}, {"type": "double", "name": "school",
+    "required": true}, {"type": "double", "name": "school day", "required": true},
+    {"type": "double", "name": "school district", "required": true}, {"type": "double",
+    "name": "school students", "required": true}, {"type": "double", "name": "school
+    year", "required": true}, {"type": "double", "name": "schools", "required": true},
+    {"type": "double", "name": "science", "required": true}, {"type": "double", "name":
+    "seating", "required": true}, {"type": "double", "name": "second", "required":
+    true}, {"type": "double", "name": "self", "required": true}, {"type": "double",
+    "name": "sensory", "required": true}, {"type": "double", "name": "set", "required":
+    true}, {"type": "double", "name": "setting", "required": true}, {"type": "double",
+    "name": "share", "required": true}, {"type": "double", "name": "single", "required":
+    true}, {"type": "double", "name": "sit", "required": true}, {"type": "double",
+    "name": "sitting", "required": true}, {"type": "double", "name": "skill", "required":
+    true}, {"type": "double", "name": "skills", "required": true}, {"type": "double",
+    "name": "small", "required": true}, {"type": "double", "name": "small group",
+    "required": true}, {"type": "double", "name": "social", "required": true}, {"type":
+    "double", "name": "socioeconomic", "required": true}, {"type": "double", "name":
+    "solve", "required": true}, {"type": "double", "name": "solving", "required":
+    true}, {"type": "double", "name": "space", "required": true}, {"type": "double",
+    "name": "spanish", "required": true}, {"type": "double", "name": "speak", "required":
+    true}, {"type": "double", "name": "special", "required": true}, {"type": "double",
+    "name": "special education", "required": true}, {"type": "double", "name": "special
+    needs", "required": true}, {"type": "double", "name": "spend", "required": true},
+    {"type": "double", "name": "standards", "required": true}, {"type": "double",
+    "name": "start", "required": true}, {"type": "double", "name": "state", "required":
+    true}, {"type": "double", "name": "stay", "required": true}, {"type": "double",
+    "name": "stem", "required": true}, {"type": "double", "name": "stools", "required":
+    true}, {"type": "double", "name": "stories", "required": true}, {"type": "double",
+    "name": "story", "required": true}, {"type": "double", "name": "strive", "required":
+    true}, {"type": "double", "name": "strong", "required": true}, {"type": "double",
+    "name": "struggle", "required": true}, {"type": "double", "name": "struggling",
+    "required": true}, {"type": "double", "name": "student", "required": true}, {"type":
+    "double", "name": "students", "required": true}, {"type": "double", "name": "students
+    able", "required": true}, {"type": "double", "name": "students access", "required":
+    true}, {"type": "double", "name": "students classroom", "required": true}, {"type":
+    "double", "name": "students come", "required": true}, {"type": "double", "name":
+    "students eager", "required": true}, {"type": "double", "name": "students excited",
+    "required": true}, {"type": "double", "name": "students learn", "required": true},
+    {"type": "double", "name": "students learning", "required": true}, {"type": "double",
+    "name": "students love", "required": true}, {"type": "double", "name": "students
+    need", "required": true}, {"type": "double", "name": "students opportunity", "required":
+    true}, {"type": "double", "name": "students receive", "required": true}, {"type":
+    "double", "name": "students school", "required": true}, {"type": "double", "name":
+    "students special", "required": true}, {"type": "double", "name": "students students",
+    "required": true}, {"type": "double", "name": "students use", "required": true},
+    {"type": "double", "name": "students work", "required": true}, {"type": "double",
+    "name": "studies", "required": true}, {"type": "double", "name": "succeed", "required":
+    true}, {"type": "double", "name": "success", "required": true}, {"type": "double",
+    "name": "successful", "required": true}, {"type": "double", "name": "supplies",
+    "required": true}, {"type": "double", "name": "support", "required": true}, {"type":
+    "double", "name": "sure", "required": true}, {"type": "double", "name": "table",
+    "required": true}, {"type": "double", "name": "tablets", "required": true}, {"type":
+    "double", "name": "taking", "required": true}, {"type": "double", "name": "task",
+    "required": true}, {"type": "double", "name": "taught", "required": true}, {"type":
+    "double", "name": "teach", "required": true}, {"type": "double", "name": "teacher",
+    "required": true}, {"type": "double", "name": "teachers", "required": true}, {"type":
+    "double", "name": "teaching", "required": true}, {"type": "double", "name": "team",
+    "required": true}, {"type": "double", "name": "technology", "required": true},
+    {"type": "double", "name": "text", "required": true}, {"type": "double", "name":
+    "thank", "required": true}, {"type": "double", "name": "things", "required": true},
+    {"type": "double", "name": "think", "required": true}, {"type": "double", "name":
+    "thinking", "required": true}, {"type": "double", "name": "time", "required":
+    true}, {"type": "double", "name": "times", "required": true}, {"type": "double",
+    "name": "title", "required": true}, {"type": "double", "name": "title school",
+    "required": true}, {"type": "double", "name": "today", "required": true}, {"type":
+    "double", "name": "tool", "required": true}, {"type": "double", "name": "tools",
+    "required": true}, {"type": "double", "name": "topics", "required": true}, {"type":
+    "double", "name": "truly", "required": true}, {"type": "double", "name": "try",
+    "required": true}, {"type": "double", "name": "trying", "required": true}, {"type":
+    "double", "name": "understand", "required": true}, {"type": "double", "name":
+    "understanding", "required": true}, {"type": "double", "name": "unique", "required":
+    true}, {"type": "double", "name": "urban", "required": true}, {"type": "double",
+    "name": "use", "required": true}, {"type": "double", "name": "use technology",
+    "required": true}, {"type": "double", "name": "used", "required": true}, {"type":
+    "double", "name": "using", "required": true}, {"type": "double", "name": "variety",
+    "required": true}, {"type": "double", "name": "various", "required": true}, {"type":
+    "double", "name": "ve", "required": true}, {"type": "double", "name": "visual",
+    "required": true}, {"type": "double", "name": "vocabulary", "required": true},
+    {"type": "double", "name": "walk", "required": true}, {"type": "double", "name":
+    "want", "required": true}, {"type": "double", "name": "want students", "required":
+    true}, {"type": "double", "name": "way", "required": true}, {"type": "double",
+    "name": "ways", "required": true}, {"type": "double", "name": "week", "required":
+    true}, {"type": "double", "name": "wide", "required": true}, {"type": "double",
+    "name": "wobble", "required": true}, {"type": "double", "name": "wonderful", "required":
+    true}, {"type": "double", "name": "words", "required": true}, {"type": "double",
+    "name": "work", "required": true}, {"type": "double", "name": "work hard", "required":
+    true}, {"type": "double", "name": "working", "required": true}, {"type": "double",
+    "name": "world", "required": true}, {"type": "double", "name": "write", "required":
+    true}, {"type": "double", "name": "writing", "required": true}, {"type": "double",
+    "name": "year", "required": true}, {"type": "double", "name": "years", "required":
+    true}, {"type": "double", "name": "young", "required": true}, {"type": "long",
+    "name": "grade_encoded", "required": true}, {"type": "long", "name": "teacher_prefix_Mr.",
+    "required": true}, {"type": "long", "name": "teacher_prefix_Mrs.", "required":
+    true}, {"type": "long", "name": "teacher_prefix_Ms.", "required": true}, {"type":
+    "long", "name": "teacher_prefix_Teacher", "required": true}, {"type": "long",
+    "name": "school_state_AL", "required": true}, {"type": "long", "name": "school_state_AR",
+    "required": true}, {"type": "long", "name": "school_state_AZ", "required": true},
+    {"type": "long", "name": "school_state_CA", "required": true}, {"type": "long",
+    "name": "school_state_CO", "required": true}, {"type": "long", "name": "school_state_CT",
+    "required": true}, {"type": "long", "name": "school_state_DC", "required": true},
+    {"type": "long", "name": "school_state_DE", "required": true}, {"type": "long",
+    "name": "school_state_FL", "required": true}, {"type": "long", "name": "school_state_GA",
+    "required": true}, {"type": "long", "name": "school_state_HI", "required": true},
+    {"type": "long", "name": "school_state_IA", "required": true}, {"type": "long",
+    "name": "school_state_ID", "required": true}, {"type": "long", "name": "school_state_IL",
+    "required": true}, {"type": "long", "name": "school_state_IN", "required": true},
+    {"type": "long", "name": "school_state_KS", "required": true}, {"type": "long",
+    "name": "school_state_KY", "required": true}, {"type": "long", "name": "school_state_LA",
+    "required": true}, {"type": "long", "name": "school_state_MA", "required": true},
+    {"type": "long", "name": "school_state_MD", "required": true}, {"type": "long",
+    "name": "school_state_ME", "required": true}, {"type": "long", "name": "school_state_MI",
+    "required": true}, {"type": "long", "name": "school_state_MN", "required": true},
+    {"type": "long", "name": "school_state_MO", "required": true}, {"type": "long",
+    "name": "school_state_MS", "required": true}, {"type": "long", "name": "school_state_MT",
+    "required": true}, {"type": "long", "name": "school_state_NC", "required": true},
+    {"type": "long", "name": "school_state_ND", "required": true}, {"type": "long",
+    "name": "school_state_NE", "required": true}, {"type": "long", "name": "school_state_NH",
+    "required": true}, {"type": "long", "name": "school_state_NJ", "required": true},
+    {"type": "long", "name": "school_state_NM", "required": true}, {"type": "long",
+    "name": "school_state_NV", "required": true}, {"type": "long", "name": "school_state_NY",
+    "required": true}, {"type": "long", "name": "school_state_OH", "required": true},
+    {"type": "long", "name": "school_state_OK", "required": true}, {"type": "long",
+    "name": "school_state_OR", "required": true}, {"type": "long", "name": "school_state_PA",
+    "required": true}, {"type": "long", "name": "school_state_RI", "required": true},
+    {"type": "long", "name": "school_state_SC", "required": true}, {"type": "long",
+    "name": "school_state_SD", "required": true}, {"type": "long", "name": "school_state_TN",
+    "required": true}, {"type": "long", "name": "school_state_TX", "required": true},
+    {"type": "long", "name": "school_state_UT", "required": true}, {"type": "long",
+    "name": "school_state_VA", "required": true}, {"type": "long", "name": "school_state_VT",
+    "required": true}, {"type": "long", "name": "school_state_WA", "required": true},
+    {"type": "long", "name": "school_state_WI", "required": true}, {"type": "long",
+    "name": "school_state_WV", "required": true}, {"type": "long", "name": "school_state_WY",
+    "required": true}, {"type": "long", "name": "Applied Learning", "required": true},
+    {"type": "long", "name": "Care & Hunger", "required": true}, {"type": "long",
+    "name": "Health & Sports", "required": true}, {"type": "long", "name": "History
+    & Civics", "required": true}, {"type": "long", "name": "Literacy & Language",
+    "required": true}, {"type": "long", "name": "Math & Science", "required": true},
+    {"type": "long", "name": "Music & The Arts", "required": true}, {"type": "long",
+    "name": "Special Needs", "required": true}, {"type": "long", "name": "Warmth",
+    "required": true}, {"type": "long", "name": "Applied Sciences", "required": true},
+    {"type": "long", "name": "Care & Hunger.1", "required": true}, {"type": "long",
+    "name": "Character Education", "required": true}, {"type": "long", "name": "Civics
+    & Government", "required": true}, {"type": "long", "name": "College & Career Prep",
+    "required": true}, {"type": "long", "name": "Community Service", "required": true},
+    {"type": "long", "name": "ESL", "required": true}, {"type": "long", "name": "Early
+    Development", "required": true}, {"type": "long", "name": "Economics", "required":
+    true}, {"type": "long", "name": "Environmental Science", "required": true}, {"type":
+    "long", "name": "Extracurricular", "required": true}, {"type": "long", "name":
+    "Financial Literacy", "required": true}, {"type": "long", "name": "Foreign Languages",
+    "required": true}, {"type": "long", "name": "Gym & Fitness", "required": true},
+    {"type": "long", "name": "Health & Life Science", "required": true}, {"type":
+    "long", "name": "Health & Wellness", "required": true}, {"type": "long", "name":
+    "History & Geography", "required": true}, {"type": "long", "name": "Literacy",
+    "required": true}, {"type": "long", "name": "Literature & Writing", "required":
+    true}, {"type": "long", "name": "Mathematics", "required": true}, {"type": "long",
+    "name": "Music", "required": true}, {"type": "long", "name": "Nutrition Education",
+    "required": true}, {"type": "long", "name": "Other", "required": true}, {"type":
+    "long", "name": "Parent Involvement", "required": true}, {"type": "long", "name":
+    "Performing Arts", "required": true}, {"type": "long", "name": "Social Sciences",
+    "required": true}, {"type": "long", "name": "Special Needs.1", "required": true},
+    {"type": "long", "name": "Team Sports", "required": true}, {"type": "long", "name":
+    "Visual Arts", "required": true}, {"type": "long", "name": "Warmth.1", "required":
+    true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-04-14 09:02:31.356126'

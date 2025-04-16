@@ -1,0 +1,15 @@
+artifact_uri: file:///home/devipriya/Ammu/Scaler_project/Donor_choose/mlruns/536414504759079616/fbe0fc6a667043039bb545f2f3ec91fe/artifacts
+end_time: 1744815458037
+entry_point_name: ''
+experiment_id: '536414504759079616'
+lifecycle_stage: active
+run_id: fbe0fc6a667043039bb545f2f3ec91fe
+run_name: XGB
+run_uuid: fbe0fc6a667043039bb545f2f3ec91fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744815305240
+status: 3
+tags: []
+user_id: devipriya

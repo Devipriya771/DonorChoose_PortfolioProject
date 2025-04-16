@@ -1,0 +1,6 @@
+artifact_location: file:///home/devipriya/Ammu/Scaler_project/Donor_choose/mlruns/521634641001242252
+creation_time: 1744620867339
+experiment_id: '521634641001242252'
+last_update_time: 1744620867339
+lifecycle_stage: active
+name: DonorsChoose_RF_Classifier

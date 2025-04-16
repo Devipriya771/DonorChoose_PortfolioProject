@@ -1,0 +1,15 @@
+artifact_uri: file:///home/devipriya/Ammu/Scaler_project/Donor_choose/mlruns/521634641001242252/06a9ffeba8714c58b5688e97cf2daedb/artifacts
+end_time: 1744621017501
+entry_point_name: ''
+experiment_id: '521634641001242252'
+lifecycle_stage: active
+run_id: 06a9ffeba8714c58b5688e97cf2daedb
+run_name: RandomForest_with_ResampledData
+run_uuid: 06a9ffeba8714c58b5688e97cf2daedb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744620867402
+status: 3
+tags: []
+user_id: devipriya

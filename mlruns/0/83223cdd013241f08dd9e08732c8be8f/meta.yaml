@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/83223cdd013241f08dd9e08732c8be8f/artifacts
+end_time: 1743703973170
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 83223cdd013241f08dd9e08732c8be8f
+run_name: RandomForest_class_imbalance_cleaned
+run_uuid: 83223cdd013241f08dd9e08732c8be8f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743703912460
+status: 3
+tags: []
+user_id: devipriya
